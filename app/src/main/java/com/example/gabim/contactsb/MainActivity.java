@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                 sendEmail.putExtra(android.content.Intent.EXTRA_EMAIL, new String[] {email});
                 sendEmail.putExtra(android.content.Intent.EXTRA_SUBJECT, subject);
                 sendEmail.putExtra(android.content.Intent.EXTRA_TEXT,
-                        "Message:"+'\n'+message);
+                        '\n'+message);
 
                 /* Send it off to the Activity-Chooser */
                 startActivity(Intent.createChooser(sendEmail, "Send mail..."));
